@@ -1,0 +1,82 @@
+body{
+    background-image: url("WhatsApp Image 2022-08-19 at 9.50.59 AM.jpeg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center ;
+     
+}
+header{
+    padding: 30px 20px;
+    color:aliceblue ;
+    width:50% ;
+    margin-left:25% ;
+    text-align: center;
+    
+}
+header p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 40px;
+}
+.follow_us{
+   color:  aliceblue;
+   position:relative;
+   top: 300px;
+}
+.form{
+    background-color: aliceblue;
+    padding: 70px 25px;
+    width: 20%;
+    margin: 30px;
+    position:relative;
+    left: 1050px;
+    top:-350px;
+
+    
+}
+.form h2{
+    position:relative;
+    bottom:28px;
+    font-size: 29px;
+}
+input,textarea{
+    border:none;
+    outline:none;
+    border-bottom: 2px solid deeppink;
+    padding:8px;
+    margin:10px;
+    width:100%;
+}
+input[type="submit"]{
+    background:deeppink;
+    color: aliceblue;
+    width:100px;
+}
+.social_icons img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin:12px;
+}
+.info img{
+    width: 20px;
+    height: 20px;
+    margin: -2px;
+}
+.social_links a{
+
+    font-size: 12px;
+    margin:15px;
+    position:relative;
+    top: 42px;
+    opacity: .01;
+    
+
+}
+.info{
+    color: aliceblue;
+    position:relative;
+    bottom: 126px;
+}

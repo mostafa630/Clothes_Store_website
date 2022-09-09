@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="email" id="login-mail" class="input-field" placeholder="Username" required>
+                <input type="password" id="login-pass" class="input-field" placeholder="Password" required>
+                <br><br>
+                <button type="submit" class="submit-btn" onclick="validate()">Log In</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="email" id="mail" class="input-field" placeholder="Enter Your Username" required>
+                <input type="password" id="pass" class="input-field" placeholder="Enter Your Password" required>
+                <input type="checkbox" class="chechk-box"><span>I agree to terms & conditions</span>
+                <button type="submit" class="submit-btn" onclick="collect_date()">Register</button>
+            </form>
+        </div>
+    </div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    function register(){
+        x.style.left= "-400px";
+        y.style.left= "50px";
+        z.style.left= "110px";
+    }
+    function login(){
+        x.style.left= "50px";
+        y.style.left= "450px";
+        z.style.left= "0";
+    }
+    function collect_date(){
+    var mail = document.getElementById("mail").value;
+    var pass = document.getElementById("pass").value;
+    if(mail != "" && pass != ""){
+        localStorage.setItem(mail,pass);
+    }
+    }
+    function validate()
+    {
+        var name = document.getElementById("login-mail").value;
+        var pass = document.getElementById("login-pass").value;
+        var flag = 0 , i;
+        for(i = 0; i < localStorage.length;i++){
+            if(name==localStorage.key(i)){
+                if(localStorage.getItem(name) == pass){
+                    if(name == "admin" && pass=="1234"){
+                        flag = 2;
+                    }else{
+                        flag = 1;
+                        
+                    }
+                    if(flag==1)
+                     window.open("file:///C:/Users/Admin/Desktop/web%20project/web2/index.html");
+                     else if(flag==2)
+                     window.open("file:///C:/Users/Admin/Desktop/web%20project/web2/admin.html");
+                    break;
+                }else{
+                    alert("The Usernae or Password Is Wrong!!!!!");
+                    break;
+                }
+            }
+
+        }
+        console.log(flag);
+        if(i == localStorage.length){
+            alert("No such Username")
+        }
+    }
+
+</script>
+
+</body>
+</html>

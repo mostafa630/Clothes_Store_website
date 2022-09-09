@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    <title>contact us</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>   
+          <h1>Contact Us</h1>  
+          <p>
+            here you can contact us by Gmail and social media
+          </p>
+
+        </header>
+        <div class="content">
+     <div class="follow_us">
+          <h2>Follow us</h2>
+        <div class="social_links">
+          
+          <a href="https://www.facebook.com/"target="blank">facebook</a>
+          <a href="https://www.instagram.com/"target="blank">Instagram</a>
+          <a href="https://www.twitter.com/"target="blank">Twitter</a>
+          <a href="https://www.youtube.com/"target="blank">YouTube</a>
+          
+        </div>
+        <div class="social_icons">
+          
+            <img src="5296499_fb_facebook_facebook logo_icon.png" alt="">
+            <img src="3225191_app_instagram_logo_media_popular_icon.png" alt="">
+            <img src="3225183_app_logo_media_popular_social_icon.png" alt="">
+            <img src="3225180_app_logo_media_popular_social_icon.png" alt="">
+          
+
+        </div>
+        
+    </div>
+    <div class="info">
+      <div class="phone">
+        <h2> <img src="icons8-phone-50.png" alt=""> phone</h2>
+        <p> 01120650700</p>
+       
+       
+      </div >
+    <div class="address">
+      <h2> <img src="icons8-location-50.png" alt=""> Address</h2>
+      <p> 3 mahmoud hassan street branched from ahmed oraby</p>
+      
+      
+    </div>  
+
+    </div>
+
+    <div class="form">
+      <h2>Send Message</h2>
+      <form action="">
+        <div class="name">
+        <input type="text" required placeholder="Your Name" name="user">
+      </div>
+        <br>
+        <div class="email">
+        <input type="email" required placeholder="Email" name="mail">
+      </div>
+        <br>
+        <div class="message" >
+        <textarea name="text" id="" cols="35" rows="1" placeholder="Type your message"></textarea>
+      </div>
+        <br>
+        <input type="submit" value="Send">
+        
+
+      </form>
+    </div>
+  </div>
+           
+         
+    </body>
+</html>
